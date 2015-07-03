@@ -1,0 +1,29 @@
+<!-- BEGIN: MAIN -->
+
+	<!-- BEGIN: LIST_ROW -->
+	<div class="media">			
+		<div class="pull-right">
+			<span class="label 
+				  <!-- IF {LIST_ROW_STATUS} == 'published' -->label-success<!-- ENDIF -->
+				  <!-- IF {LIST_ROW_STATUS} == 'pending' -->label-warning<!-- ENDIF -->">{LIST_ROW_LOCALSTATUS}</span>
+			<br/>
+			<br/>
+			<p>{LIST_ROW_PAYVIP}</p>	  
+			<p>{LIST_ROW_PAYTOP}</p>	  
+			<p>{LIST_ROW_PAYBOLD}</p>
+		</div>
+		<!-- IF {LIST_ROW_LOGO} != '' -->
+		<a class="pull-left" href="{LIST_ROW_URL}"><img src="{LIST_ROW_LOGO}" alt="{LIST_ROW_SHORTTITLE}" /></a>	
+		<!-- ENDIF -->
+		<div class="media-body">
+			<h4 class="media-heading"><a href="{LIST_ROW_URL}">{LIST_ROW_SHORTTITLE}</a></h4>
+			<!-- IF {LIST_ROW_DESC} --><p class="small marginbottom10">{LIST_ROW_DESC}</p><!-- ENDIF -->
+			<!-- IF {PHP.usr.isadmin} --><p class="small marginbottom10">{LIST_ROW_ADMIN} ({LIST_ROW_COUNT})</p><!-- ENDIF -->
+			{LIST_ROW_TEXT_CUT}
+			<!-- IF {LIST_ROW_TEXT_IS_CUT} -->{LIST_ROW_MORE}<!-- ENDIF -->
+		</div>
+	</div>	
+	<br/>
+	<!-- END: LIST_ROW -->
+
+<!-- END: MAIN -->

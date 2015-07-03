@@ -1,0 +1,50 @@
+.bn-fixed{
+    position: fixed;
+    right: 0px;
+    top: 150px;
+    width: 22px;
+    z-index: 999;
+    cursor: pointer;
+    height: 200px;
+    padding: 0px;
+    text-indent: -90000px;
+    outline: none;
+}
+
+.bn-fixed,
+.bn-fixed.green{
+	background: url("../img/callme_button_green.png") 0px 0px transparent;
+}
+
+.bn-fixed.black{
+	background: url("../img/callme_button_black.png") 0px 0px transparent;
+}
+
+.bn-fixed.blue{
+	background: url("../img/callme_button_blue.png") 0px 0px transparent;
+}
+
+.bn-fixed.pink{
+	background: url("../img/callme_button_pink.png") 0px 0px transparent;
+}
+
+.bn-fixed.white{
+	background: url("../img/callme_button_white.png") 0px 0px transparent;
+}
+
+#callmeModal .has-error .form-control {
+    border-color: #b94a48;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+#callmeModal .has-error .form-control:focus {
+    border-color: #953b39;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+}
+
+#callmeModal .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
+    color: #b94a48;
+    display: inline;
+}

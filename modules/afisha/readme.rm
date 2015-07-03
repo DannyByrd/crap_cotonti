@@ -1,0 +1,62 @@
+		-==Для вывода аватаров в категориях==-
+		 --Изменение функционального файла--
+Все категории из 8 модулей выводится при помощи функций 
+cot_build_structure_(page/products/boad и т.д.)_tree 
+
+Переходи в нужный нам модуль (напр page)
+Находи функцию cot_build_structure_page_tree
+Добавляем глобальную переменную  $db_x
+В цикле foreach($cats as $cat){} вставляем следующий код:
+
+$query = $db->query("SELECT mav_code AS id FROM $db_x"."mavatars WHERE mav_extension = 'structure' AND mav_category = '".$cat."'");
+		  	$mav_code = $query->fetch();
+		  	if($mav_code){
+
+		  		$mavatar = new mavatar('structure', $cat, $mav_code['id']);
+		  		$mavatars_tags = $mavatar->generate_mavatars_tags();
+		  		
+		  		$t1->assign(array(
+			  	'LIST_ROWCAT_MAVATAR'		=> $mavatars_tags,
+			  	'LIST_ROWCAT_MAVATARCOUNT'	=> count($mavatars_tags),
+			  	'LIST_ROWCAT_CATEGORY_AVATAR' => $cat
+			  ));
+
+		  	}
+
+
+Ниже добавляем одну строку:  'LIST_ROWCAT_CATEGORY' => $cat 
+в массив $t1->assign(array(...));
+
+Единственное какое может бысть различие у модулей так это другое название переменной $cat
+foreach ($subcat as $x) тогда вместо $cat вставляем $x 
+
+				--Изменение файла шаблона--
+заходив в нужный нам шаблон например page.tree.index.tpl
+и встравляем следующий код:
+
+<!-- BEGIN: MAIN -->
+<div class="row">
+	<ul class="pull-left span3">
+		<!-- BEGIN: LIST_ROWCAT -->
+		<!-- IF {LIST_ROWCAT_COUNT_VIEW} AND {LIST_ROWCAT_NUM} <= {LIST_ROWCAT_COUNT_VIEW} -->
+		<li>{LIST_ROWCAT_NUM}<a href="{LIST_ROWCAT_URL}" title="{LIST_ROWCAT_TITLE}">{LIST_ROWCAT_TITLE}</a> </li>
+		<h4>{LIST_ROWCAT_DESC|cot_cutstring($this, 20)}</h4>
+		<!-- IF {PHP.cot_plugins_active.mavatars} -->
+			<!-- IF {LIST_ROWCAT_CATEGORY_AVATAR} == {LIST_ROWCAT_CATEGORY} -->
+				<img src="{LIST_ROWCAT_MAVATAR.1|cot_mav_thumb($this, 100, 150)}"/>
+			<!-- ENDIF -->
+		<!-- ENDIF -->
+	<!-- IF {LIST_ROWCAT_COL} -->
+	<!-- ENDIF -->
+
+	</ul>
+	<ul class="pull-right span3">
+	<!-- ENDIF -->
+		<!-- END: LIST_ROWCAT -->
+	</ul>
+</div>	
+<div class="clear"></div>
+
+<!-- END: MAIN -->
+
+

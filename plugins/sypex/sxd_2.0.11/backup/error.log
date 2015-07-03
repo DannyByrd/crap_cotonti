@@ -1,0 +1,56 @@
+[index.php]
+Notice: Undefined variable: _SESSION (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:24)
+[index.php]
+Warning: require_once(system/functions.custom.php): failed to open stream: No such file or directory (/home/levhik/web/sites/cotonti/system/functions.php:5616)
+[index.php]
+Warning: require_once(system/debug.php): failed to open stream: No such file or directory (/home/levhik/web/sites/cotonti/system/common.php:38)
+[index.php]
+Notice: Undefined variable: sys (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:25)
+[index.php]
+Notice: Undefined variable: sys (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:25)
+[index.php]
+Warning: require_once(system/debug.php): failed to open stream: No such file or directory (/home/levhik/web/sites/cotonti/system/common.php:38)
+[index.php]
+Notice: Undefined variable: _SESSION (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:26)
+[index.php]
+Notice: Undefined variable: sys (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:26)
+[index.php]
+Notice: Undefined variable: sys (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:26)
+[index.php]
+Notice: Undefined index: sid (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:26)
+[index.php]
+Notice: Undefined variable: db_users (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:27)
+[index.php]
+Notice: Undefined variable: u_id (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:27)
+[index.php]
+Notice: Undefined variable: sql (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:29)
+[index.php]
+Notice: Undefined variable: db_users (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:27)
+[index.php]
+Notice: Undefined variable: u_id (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:27)
+[index.php]
+Notice: Undefined variable: sql (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:29)
+[index.php]
+Notice: Undefined variable: SERVER (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:20)
+[index.php]
+Notice: Undefined variable: SERVER (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:20)
+[index.php]
+Notice: Undefined variable: SERVER (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:20)
+[index.php]
+Notice: Undefined variable: SERVER (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:20)
+[index.php]
+Notice: Undefined variable: SERVER (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:20)
+[index.php]
+Notice: Undefined variable: SERVER (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:20)
+[index.php]
+Notice: Undefined variable: SERVER (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:20)
+[index.php]
+Notice: Undefined variable: SERVER (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:20)
+[index.php]
+Notice: Undefined variable: SERVER (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:20)
+[index.php]
+Notice: Undefined variable: SERVER (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:20)
+[index.php]
+Notice: Undefined variable: SERVER (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:20)
+[index.php]
+Notice: Undefined variable: SERVER (/home/levhik/web/sites/cotonti/plugins/sypex/sxd_2.0.11/index.php:20)
